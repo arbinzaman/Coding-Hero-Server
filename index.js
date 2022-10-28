@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 });
 app.get('/courses-categories', (req, res) => {
   res.send(categories);
-});
+
 app.listen(port, () => {
   console.log("Learn with Fun site running on port:", port);
 });
