@@ -7,7 +7,7 @@ app.use(cors());
 
 //Course Data
 const courses = require("./data/courses.json");
-const categories = require("./data/categories.json")
+
 // API Loading
 app.get("/courses", (req, res) => {
   res.send(courses);
