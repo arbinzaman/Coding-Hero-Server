@@ -15,7 +15,8 @@ app.get("/courses", (req, res) => {
 
 app.get("/category/:id", (req, res) => {
   const id = req.params.id;
-  const catagory_course = courses.find((item) => item.catagory_id == id);
+  console.log(id);
+  const catagory_course = courses.find((item) => item._id == id);
   // console.log(catagory_news);
   res.send(catagory_course);
 });
